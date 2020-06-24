@@ -17,7 +17,7 @@ function Navbar(props) {
             <nav>
             <h2>Shop</h2>
             <ul>
-                <li><Link to="/">Home</Link></li>
+                <li><Link to="/" className="button3">Home</Link></li>
                 <li className="cart"><Link to="/cart">
     <ion-icon name="basket-outline"></ion-icon> Cart <span>{props.basketProps.basketNumbers}</span>
                 </Link></li>

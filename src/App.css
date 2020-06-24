@@ -212,3 +212,43 @@ li a {
      padding-right: 8%;
    }
  }
+
+ .backToShopping {
+  padding-right: 180px;
+  color: royalblue;
+  padding-top: 5px;
+ }
+
+ a {
+   text-decoration: none;
+ }
+
+ h5.quantity {
+  padding-left: 15px;
+ }
+
+ a.button3 {
+  display:inline-block;
+  padding:0.3em 1.2em;
+  margin:0 0.3em 0.3em 0;
+  border-radius:2em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family:'Roboto',sans-serif;
+  font-weight:300;
+  color:#FFFFFF;
+  background-color: green;
+  text-align:center;
+  transition: all 0.2s;
+ }
+
+ a.button3:hover {
+   background-color: #4095c6;
+ }
+
+ @media all and (max-width:30em)
+ 
+ { a.button3
+  { display:block;
+   margin:0.2em auto; } 
+  }

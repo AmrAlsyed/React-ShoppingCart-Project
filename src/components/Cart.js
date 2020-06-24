@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import { connect } from 'react-redux';
-import {productQuantity, clearProduct} from '../actions/productQuantity'
+import {productQuantity, clearProduct} from '../actions/productQuantity';
+import { Link } from 'react-router-dom';
 
 import greenTshirt from '../images/greenTshirt.jpg';
 import mobacoTshirt from '../images/MobacoTshirt.jpg';
@@ -55,17 +56,17 @@ function Cart({basketProps, productQuantity, clearProduct}) {
 
     return (
         <div className="container-products">
-            <h2>SHOPPING CART</h2>
             <div className="product-header">
                 <h5 className="product-title">PRODUCT</h5>
-                <h5 className="price sm-hide">PRICE</h5>
                 <h5 className="quantity">QUANTITY</h5>
+                <h5 className="price sm-hide ">PRICE</h5>
                 <h5 className="total">TOTAL</h5>
             </div>
             <div className="products">
                 { productsInCart }
             </div>
             <div className="basketTotalContainer">
+            <ion-icon name="arrow-back-outline"></ion-icon> <Link to="/"> <h4 className="backToShopping">Continue Shopping</h4> </Link>
                 <h4 className="basketTotalTitle">Basket Total</h4>
                 <h4 className="basketTotal">{basketProps.cartCost},00</h4>
             </div>
